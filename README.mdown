@@ -1,0 +1,3 @@
+# ExtendScript TextMate Bundle
+
+Copyright (C) 2010 tyama & kanemu All Rights Reserved.
