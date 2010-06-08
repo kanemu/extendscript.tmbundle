@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#target "${0:InDesign}"</string>
+	<key>name</key>
+	<string>#target</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>#ta</string>
+	<key>uuid</key>
+	<string>48A135E8-EB06-4708-9B3C-32CF97E58613</string>
+</dict>
+</plist>

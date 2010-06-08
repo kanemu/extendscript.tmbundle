@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#targetengine "${0:session}"</string>
+	<key>name</key>
+	<string>#targetengine</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>#tae</string>
+	<key>uuid</key>
+	<string>944AAD69-B5F2-4CCD-AC05-5AD94CE20631</string>
+</dict>
+</plist>

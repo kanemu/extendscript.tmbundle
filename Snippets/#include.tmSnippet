@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#include "lib/${0:untitled}.jsxinc"</string>
+	<key>name</key>
+	<string>#include</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>#inc</string>
+	<key>uuid</key>
+	<string>80C529B1-34F6-49D2-A1D3-79E564AF948E</string>
+</dict>
+</plist>

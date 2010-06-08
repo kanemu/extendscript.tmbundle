@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>ExtendScript</string>
+	<key>ordering</key>
+	<array>
+		<string>CD3E03DD-7FF2-491C-BBD5-342C4EF7B1C6</string>
+		<string>6DF49BD9-FF74-4934-87E7-4FFC3E09E1B0</string>
+		<string>70AF603D-1986-42E2-80C9-EC8D71ED289A</string>
+		<string>9352701C-185C-4D8E-AA5B-3DA0D0568CBA</string>
+		<string>A48DC57B-16E9-4DC1-A079-2F61D15BFD08</string>
+		<string>CC84A2AB-4081-4BEA-BBE0-403F4B89E632</string>
+		<string>E8B4B091-271B-4275-927C-42BB5C09B099</string>
+		<string>ED3E9FED-4924-452B-9157-09ECDA9C1059</string>
+		<string>48A135E8-EB06-4708-9B3C-32CF97E58613</string>
+		<string>944AAD69-B5F2-4CCD-AC05-5AD94CE20631</string>
+		<string>80C529B1-34F6-49D2-A1D3-79E564AF948E</string>
+		<string>A14746F5-B57B-4EFA-9481-87E77DB1DEEA</string>
+		<string>FFE44C10-CCDC-45DC-A3E2-80A5CF571FEE</string>
+		<string>A0AF4E30-B5A5-4F34-9CA3-2499A44439D5</string>
+	</array>
+	<key>uuid</key>
+	<string>10413A29-A7B9-434F-9A00-54D565741643</string>
+</dict>
+</plist>

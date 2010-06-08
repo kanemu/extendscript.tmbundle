@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var obj=app.activeDocument.selection[0];
+\$.writeln(obj.properties.toSource().replace(/,/g,",\n"));</string>
+	<key>name</key>
+	<string>show properties by InDesign</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>pro</string>
+	<key>uuid</key>
+	<string>CC84A2AB-4081-4BEA-BBE0-403F4B89E632</string>
+</dict>
+</plist>
