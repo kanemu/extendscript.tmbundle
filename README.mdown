@@ -1,3 +1,26 @@
 # ExtendScript TextMate Bundle
 
+usage:
+
+落としてきたフォルダ名を[ExtendScript.tmbundle]として、
+<Home>/Library/Application Support/TextMate/Bundles
+に入れて下さい。
+
+Scope Selector の　[source.js] は　JavaScript.tmbundle に依存しています。
+JavaScript.tmbundle の　Language JavaScript の 3行目
+	fileTypes = ( 'js', 'htc' );
+を
+	fileTypes = ( 'jsx', 'js', 'jsxinc', 'htc' );
+に変更して下さい。
+
+デフォルトのコマンドショートカット：
+
+* Command + 4 -> CS4で実行
+* Command + 3 -> CS3で実行
+* Command + 2 -> CS2で実行
+* Command + option + 4 -> ExtendScript Toolkit CS4 で開く
+* Command + option + 3 -> ExtendScript Toolkit 2 で開く
+
+ショートカットは自分で使いやすいように直して下さい。
+
 Copyright (C) 2010 tyama & kanemu All Rights Reserved.
