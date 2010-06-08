@@ -13,8 +13,7 @@ JavaScript.tmbundle の　Language JavaScript の 3行目
 	fileTypes = ( 'jsx', 'js', 'jsxinc', 'htc' );
 に変更して下さい。
 
-コードを拡張子.jsxで保存し、ショートカットキーを叩くと実行されます。
-
+コードを拡張子.jsxで保存し、ショートカットキーを叩くと実行されます。<br/>
 \#target が設定してある場合、そのアプリが立ち上がって実行します。なければデフォルトでInDesign上で実行されます。
 
 デフォルトのコマンドショートカット：
@@ -27,4 +26,12 @@ JavaScript.tmbundle の　Language JavaScript の 3行目
 
 ショートカットは自分で使いやすいように直して下さい。
 
-Copyright (C) 2010 tyama & kanemu All Rights Reserved.
+---------------------------------------
+ExtendScript TextMate Bundle<br/>
+Copyright (C) 2010 tyama(T.Yamamoto) & kanemu(Y.Kanamura) All Rights Reserved.
+
+1. 変更の有無に関わらず、以下の条件を満たす限りにおいて、再配布および利用を許可します。
+1-1. 上記著作権表示、 本条件書および第2項の責任限定規定を必ず含めてください。
+2. 本ソフトウェアは無保証です。自己責任で使用してください。
+3. 著作権者の名前を、広告や宣伝に勝手に使用しないでください。
+
