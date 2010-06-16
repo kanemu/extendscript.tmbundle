@@ -18,6 +18,7 @@ JavaScript.tmbundle の　Language JavaScript の 3行目
 
 デフォルトのコマンドショートカット：
 
+* Command + 5 -> CS5で実行
 * Command + 4 -> CS4で実行
 * Command + 3 -> CS3で実行
 * Command + 2 -> CS2で実行
