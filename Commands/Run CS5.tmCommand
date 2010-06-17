@@ -55,8 +55,8 @@ echo `cat "${TM_FILEPATH}.log" | sed -e 's/\&amp;/\&amp;amp;/g' -e 's/\&lt;/\&am
 echo "&lt;/pre&gt;----結果----"
 
 #ログとスクリプトを削除
-#rm "${TM_FILEPATH}.tmp.jsx"
-#rm "${TM_FILEPATH}.log"
+rm "${TM_FILEPATH}.tmp.jsx"
+rm "${TM_FILEPATH}.log"
 </string>
 	<key>input</key>
 	<string>document</string>
