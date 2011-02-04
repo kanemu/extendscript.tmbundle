@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#target "Illustrator"
-var o=app.activeDocument.selection[0];
-(function(o){for(var i in o){try{i+=':'+o[i]}catch(e){i+=':'+e}\$.writeln(i)}})(o);
-</string>
+	<string>colors.add({
+	model:ColorModel.${1:PROCESS/SPOT/REGISTRATION/MIXEDINKMODEL}, 
+	space:ColorSpace.${2:CMYK/RGB/LAB/MIXEDINK}, 
+	colorValue:[${3:0,0,0,0}], 
+	name:"${4:}"});</string>
 	<key>name</key>
-	<string>show properties by Illustrator</string>
+	<string>colors.add</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>aipro</string>
+	<string>colors</string>
 	<key>uuid</key>
-	<string>E8B4B091-271B-4275-927C-42BB5C09B099</string>
+	<string>300A7A4D-CEA8-4AFF-B231-17CBADD7C0A8</string>
 </dict>
 </plist>

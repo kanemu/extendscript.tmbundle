@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>transform(
+	CoordinateSpaces.${1:INNER_COORDINATES/PARENT_COORDINATES/PASTEBOARD_COORDINATES},
+	AnchorPoint.${2:BOTTOM_CENTER_ANCHOR/BOTTOM_LEFT_ANCHOR/BOTTOM_RIGHT_ANCHOR/}${3:CENTER_ANCHOR/LEFT_CENTER_ANCHOR/RIGHT_CENTER_ANCHOR/}${4:TOP_CENTER_ANCHOR/TOP_LEFT_ANCHOR/TOP_RIGHT_ANCHOR}
+	${5:"myTransformationMatrix"}
+	});</string>
+	<key>name</key>
+	<string>transform</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>transf</string>
+	<key>uuid</key>
+	<string>95193651-4173-4CCF-AD00-762C4DB5CD21</string>
+</dict>
+</plist>

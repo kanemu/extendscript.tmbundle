@@ -3,17 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#target "Illustrator"
-var o=app.activeDocument.selection[0];
-(function(o){for(var i in o){try{i+=':'+o[i]}catch(e){i+=':'+e}\$.writeln(i)}})(o);
+	<string>switch(${1:object}){
+	case ${2:"Things"}: ${3:Do_something}; break;
+	case ${2:"Things"}: ${3:Do_something}; break;
+	case ${2:"Things"}: ${3:Do_something}; break;
+	default: ${4:}; break;
+}
 </string>
 	<key>name</key>
-	<string>show properties by Illustrator</string>
+	<string>switch case</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>aipro</string>
+	<string>swi</string>
 	<key>uuid</key>
-	<string>E8B4B091-271B-4275-927C-42BB5C09B099</string>
+	<string>4D52BC54-A151-41A2-A0F0-A0C540CD6E39</string>
 </dict>
 </plist>
