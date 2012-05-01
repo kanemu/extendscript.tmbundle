@@ -18,10 +18,12 @@ JavaScript.tmbundle の　Language JavaScript の 3行目
 
 デフォルトのコマンドショートカット：
 
+* Command + F5 -> CS5.5で実行
 * Command + 5 -> CS5で実行
 * Command + 4 -> CS4で実行
 * Command + 3 -> CS3で実行
 * Command + 2 -> CS2で実行
+* Command + option + F5 -> ExtendScript Toolkit CS5.5 で開く
 * Command + option + 5 -> ExtendScript Toolkit CS5 で開く
 * Command + option + 4 -> ExtendScript Toolkit CS4 で開く
 * Command + option + 3 -> ExtendScript Toolkit 2 で開く
