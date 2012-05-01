@@ -7,16 +7,16 @@
 	<key>command</key>
 	<string>#スクリプトを複製
 #$.write、$.writelnをオーバーライド
-echo "var file=new File(\"${TM_FILEPATH}.log\");file.encoding=\"UTF8\";file.lineFeed=\"Mac\";file.open('e');
-\$.write = function(){file.seek(0,2);file.write(arguments[0])};
-\$.writeln = function(){file.seek(0,2);file.writeln(arguments[0])};"&gt; "${TM_FILEPATH}.tmp.jsx"
+echo "var aZ16qB46=new File(\"${TM_FILEPATH}.log\");aZ16qB46.encoding=\"UTF8\";aZ16qB46.lineFeed=\"Mac\";aZ16qB46.open('e');
+\$.write = function(){aZ16qB46.seek(0,2);aZ16qB46.write(arguments[0])};
+\$.writeln = function(){aZ16qB46.seek(0,2);aZ16qB46.writeln(arguments[0])};"&gt; "${TM_FILEPATH}.tmp.jsx"
 
 #Scriptの内容を書き込み
 cat "${TM_FILEPATH}" &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
 echo '' &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
 
 #ログを閉じる行を書き込み
-echo "file.close();" &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
+echo "aZ16qB46.close();" &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
 
 #Scriptを1行づつ読み込んで#targetを探す
 while read -r LINE; do
