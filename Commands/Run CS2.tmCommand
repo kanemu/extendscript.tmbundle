@@ -19,12 +19,9 @@ echo '' &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
 echo "aZ16qB46.close();" &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
 
 #Scriptを1行づつ読み込んで#targetを探す
-while read -r LINE; do
-   target=`expr "$LINE" : '^#target \{1,\}"\(.\{1,\}\)" *$'`
-   if [ "$target" != "" ]; then
-	break
-   fi
-done &lt; "${TM_FILEPATH}"
+_target=`grep '^#target' ${TM_FILEPATH} | sed -e "s/^#target \{1,\}[\"|']\(.\{1,\}\)[\"|\'] *$/\1/g"`
+arr=(`echo $_target | tr -s ' ' ' '`)
+target=${arr[0]}
 
 #targetの検索結果から条件分岐して、実行するアプリを選択(CS2_JP)
 if echo "$target" | fgrep -iq 'photoshop' ; then
