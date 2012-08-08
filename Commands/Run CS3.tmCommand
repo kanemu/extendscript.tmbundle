@@ -38,11 +38,13 @@ fi
 #ログファイルを作成
 : &gt; "${TM_FILEPATH}.log"
 
-#osascriptからAppleScriptを実行
+#osascriptからAppleScriptを実行 タイムアウトまで5分
 osascript -e "on run argv
  set fileName to item 1 of argv
  tell application \"$app\"
+ with timeout of 300 seconds
    $run
+ end timeout
  end tell
 end run" "${TM_FILEPATH}.tmp.jsx"
 
