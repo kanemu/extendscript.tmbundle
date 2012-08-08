@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>(function(){
   ${0:// body...}
-})(</string>
+}()</string>
 	<key>name</key>
 	<string>(function(){})()</string>
 	<key>scope</key>
