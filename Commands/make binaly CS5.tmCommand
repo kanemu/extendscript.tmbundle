@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open -a '/Applications/Utilities/Adobe Utilities-CS5.localized/ExtendScript Toolkit CS5/ExtendScript Toolkit.app' "$TM_FILEPATH"
+osascript -e "activate application \"ExtendScript Toolkit\"
+tell application \"System Events\"
+     tell process \"ExtendScript Toolkit\"
+          set frontmost to true
+          click menu item \"バイナリ形式で書き出し...\" of menu 1 of menu bar item \"ファイル\" of menu bar 1
+          tell window \"別名で保存\"
+               click button \"保存\"
+          end tell
+          click menu item \"ExtendScript Toolkit を終了\"  of menu 1 of menu bar item \"ExtendScript Toolkit\"  of menu bar 1
+     end tell
+end tell"
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~$@</string>
+	<key>name</key>
+	<string>make binaly CS5</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>uuid</key>
+	<string>9CF4F00B-1C6B-41A8-882A-7F4B237FE25D</string>
+</dict>
+</plist>
