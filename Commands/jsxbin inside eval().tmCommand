@@ -24,7 +24,7 @@ def main():
 		lines2.append(line)
 	outfile.write('eval("'+string.join(lines2,'')+'");')
 if __name__ == '__main__':
-    main()
+	main()
 </string>
 	<key>input</key>
 	<string>selection</string>
