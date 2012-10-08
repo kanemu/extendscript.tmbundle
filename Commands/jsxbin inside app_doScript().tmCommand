@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/python
+import sys
+import codecs
+import string
+import re
+
+def main():
+	if len(sys.argv) == 1:
+		infile = codecs.getreader('utf_8')(sys.stdin)
+		outfile = codecs.getwriter('utf_8')(sys.stdout)
+	else:
+		raise SystemExit(sys.argv[0] + " [infile [outfile]]")
+	lines = infile.readlines()
+	lines2 = []
+	for line in lines:
+		line = re.sub(r'(\r?\n|\r)', r'\\\1', line)
+		lines2.append(line)
+	outfile.write('app.doScript("'+string.join(lines2,'')+'");')
+if __name__ == '__main__':
+    main()
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~@B</string>
+	<key>name</key>
+	<string>jsxbin inside app.doScript()</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>uuid</key>
+	<string>D48A25BD-88F6-424C-A75B-87AD178BC1C7</string>
+</dict>
+</plist>
