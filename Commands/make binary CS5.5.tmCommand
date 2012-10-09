@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>open -a '/Applications/Utilities/Adobe Utilities-CS5.localized/ExtendScript Toolkit CS5/ExtendScript Toolkit.app' "$TM_FILEPATH"
+	<string>open -a '/Applications/Utilities/Adobe Utilities-CS5.5.localized/ExtendScript Toolkit CS5.5/ExtendScript Toolkit.app' "$TM_FILEPATH"
 osascript -e "activate application \"ExtendScript Toolkit\"
 tell application \"System Events\"
      tell process \"ExtendScript Toolkit\"
@@ -23,12 +23,12 @@ end tell"
 	<key>keyEquivalent</key>
 	<string>~$@</string>
 	<key>name</key>
-	<string>make binaly CS5</string>
+	<string>make binary CS5.5</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>uuid</key>
-	<string>9CF4F00B-1C6B-41A8-882A-7F4B237FE25D</string>
+	<string>00008F97-199D-4658-A865-79F4A7C09D78</string>
 </dict>
 </plist>
