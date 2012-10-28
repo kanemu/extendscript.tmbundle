@@ -21,7 +21,7 @@ end tell"
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>~$@</string>
+	<string>~@%</string>
 	<key>name</key>
 	<string>make binary CS5</string>
 	<key>output</key>
