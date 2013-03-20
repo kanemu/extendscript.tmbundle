@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open -a '/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app' "$TM_FILEPATH"</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~@6</string>
+	<key>name</key>
+	<string>open ESTK CS6</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>uuid</key>
+	<string>AEB9D252-C560-43CA-B514-B0D59D23D0CA</string>
+</dict>
+</plist>
