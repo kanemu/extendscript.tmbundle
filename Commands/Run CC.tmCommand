@@ -8,23 +8,31 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-export PS_APP_PATH="/Applications/Adobe Photoshop CS4/Adobe Photoshop CS4.app"
-export AI_APP_PATH="/Applications/Adobe Illustrator CS4/Adobe Illustrator.app"
-export ID_APP_PATH="/Applications/Adobe InDesign CS4/Adobe InDesign CS4.app"
+export PS_APP_PATH="/Applications/Adobe Photoshop CC/Adobe Photoshop CC.app"
+export AI_APP_PATH="/Applications/Adobe Illustrator CC/Adobe Illustrator.app"
+export ID_APP_PATH="/Applications/Adobe InDesign CC/Adobe InDesign CC.app"
 
 extendscriptmate.sh 2&gt;/dev/null
 </string>
 	<key>input</key>
 	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@4</string>
+	<string>@7</string>
 	<key>name</key>
-	<string>Run CS4</string>
-	<key>output</key>
-	<string>showAsHTML</string>
+	<string>Run CC</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>uuid</key>
-	<string>CD3E03DD-7FF2-491C-BBD5-342C4EF7B1C6</string>
+	<string>6E256366-30B3-42BB-AF20-BD57ACCF3AD1</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

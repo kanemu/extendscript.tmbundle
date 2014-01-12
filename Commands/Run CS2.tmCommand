@@ -5,57 +5,14 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#スクリプトを複製
-#$.write、$.writelnをオーバーライド
-echo "var aZ16qB46=new File(\"${TM_FILEPATH}.log\");aZ16qB46.encoding=\"UTF8\";aZ16qB46.lineFeed=\"Mac\";aZ16qB46.open('e');
-\$.write = function(){aZ16qB46.seek(0,2);aZ16qB46.write(arguments[0])};
-\$.writeln = function(){aZ16qB46.seek(0,2);aZ16qB46.writeln(arguments[0])};"&gt; "${TM_FILEPATH}.tmp.jsx"
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-#Scriptの内容を書き込み
-cat "${TM_FILEPATH}" &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
-echo '' &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
+export PS_APP_PATH="/Applications/Adobe Photoshop CS2/Adobe Photoshop CS2.app"
+export AI_APP_PATH="/Applications/Adobe Illustrator CS2/Adobe Illustrator.app"
+export ID_APP_PATH="/Applications/Adobe InDesign CS2_J/Adobe InDesign CS2_J.app"
 
-#ログを閉じる行を書き込み
-echo "aZ16qB46.close();" &gt;&gt; "${TM_FILEPATH}.tmp.jsx"
-
-#Scriptを1行づつ読み込んで#targetを探す
-_target=`grep '^#target' ${TM_FILEPATH} | sed -e "s/^#target \{1,\}[\"|']\(.\{1,\}\)[\"|\'] *$/\1/g"`
-arr=(`echo $_target | tr -s ' ' ' '`)
-target=${arr[0]}
-
-#targetの検索結果から条件分岐して、実行するアプリを選択(CS2_JP)
-if echo "$target" | fgrep -iq 'photoshop' ; then
-  app="/Applications/Adobe Photoshop CS2/Adobe Photoshop CS2.app"
-  run="do javascript file (fileName as POSIX file)"
-elif echo "$target" | fgrep -iq 'illustrator' ; then
-  app="/Applications/Adobe Illustrator CS2/Adobe Illustrator.app"
-  run="do javascript file (fileName as POSIX file)"
-else
-  app="/Applications/Adobe InDesign CS2_J/Adobe InDesign CS2_J.app"
-  run="do script file (fileName as POSIX file) language javascript"
-fi
-
-#ログファイルを作成
-: &gt; "${TM_FILEPATH}.log"
-
-#osascriptからAppleScriptを実行 タイムアウトまで5分
-osascript -e "on run argv
- set fileName to item 1 of argv
- tell application \"$app\"
- with timeout of 300 seconds
-   $run
- end timeout
- end tell
-end run" "${TM_FILEPATH}.tmp.jsx"
-
-#結果を表示
-echo "&lt;br/&gt;----結果----&lt;pre&gt;"
-echo `cat "${TM_FILEPATH}.log" | sed -e 's/\&amp;/\&amp;amp;/g' -e 's/\&lt;/\&amp;lt;/g' -e 's/\&gt;/\&amp;gt;/g'`
-echo "&lt;/pre&gt;----結果----"
-
-#ログとスクリプトを削除
-rm "${TM_FILEPATH}.tmp.jsx"
-rm "${TM_FILEPATH}.log"
+extendscriptmate.sh 2&gt;/dev/null
 </string>
 	<key>input</key>
 	<string>document</string>
