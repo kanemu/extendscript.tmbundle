@@ -36,27 +36,34 @@ fi
 
 #ログファイルを作成
 : > "${extendscriptmate_log}"
-html_header "Running \"${TM_FILENAME}\" ..."
+html_header "Running \"${TM_FILENAME}\" ..." "APP: ${app}"
 
 #ログを監視
 echo '<pre>'
 tail -f "${extendscriptmate_log}" &
 tail_pid=$!
 
-#osascriptからAppleScriptを実行 タイムアウトまで5分
+#開始時間
+START=`date +%s`
+#osascriptからAppleScriptを実行 タイムアウトまで30分
 echo "on run argv
  set fileName to item 1 of argv
  tell application \"$app\"
- with timeout of 300 seconds
+ with timeout of 1800 seconds
    $run
  end timeout
  end tell
 end run" | osascript - "${extendscriptmate_jsx}" >> "${extendscriptmate_log}" 2>&1
+#終了時間
+END=`date +%s`
 
 #tailを止める
 sleep 1s
 kill -s SIGKILL $tail_pid
 echo '</pre>'
+#処理時間を表示
+SS=`expr ${END} - ${START}`
+echo "Program exited after $SS seconds."
 html_footer
 
 #スクリプトを削除
