@@ -18,7 +18,7 @@ cat "${TM_FILEPATH}" >> "${extendscriptmate_jsx}"
 echo '' >> "${extendscriptmate_jsx}"
 
 #Scriptを1行づつ読み込んで#targetを探す
-_target=`grep '^#target' ${TM_FILEPATH} | sed -e "s/^#target \{1,\}[\"|']\(.\{1,\}\)[\"|\'] *$/\1/g"`
+_target=`grep '^#target' ${TM_FILEPATH} | sed -e "s/^#target \{1,\}[\"']\(.\{1,\}\)[\"'] *$/\1/g"`
 arr=(`echo $_target | tr -s ' ' ' '`)
 target=${arr[0]}
 
